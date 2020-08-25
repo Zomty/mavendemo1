@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.bg::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.5;
+    background: rgba(0,0,0,0.3);
+}
+
+.login-area{
+    position: absolute;
+    width: 350px;
+    left: 37%;
+    top: 129px;
+}
+
+.login-logo{
+    text-align: center;
+    width: 100%;
+    height: 90px;
+}
+
+.input-area{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    height: 240px;
+}
+
+.input-area input{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    text-indent: 10px;
+    margin: 10px 0;
+    padding: 0;
+    outline: none;
+}
+
+.input-area input:focus{
+    border: 1px solid #f08b1d;
+    box-shadow: 0 0 5px #f9c00a;
+    outline: none;
+    transition: box-shadow 0.25s linear 0s;
+    -webkit-transition: box-shadow 0.25s linear 0s;
+}
+
+.input-area>form>div{
+    text-align: right;
+    font-size: 11px;
+    color: orange;
+}
+
+.input-area button{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e94715;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tips-area{
+    font-size: 11px;
+    width: 130px;
+    line-height: 20px;
+    border-radius: 15px;
+    margin: 10px auto;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    height: 20px;
+    color: white;
+}
+
+.login-area a{
+    color: orange;
+    text-decoration: none;
+}
+
+.tips{
+    position: absolute;
+    display: block;
+    font-size: 11px;
+    color: red;
+    bottom: 79px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.tips i{
+    background: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+}
+
+#login{
+    width: 310px;
+    margin: auto;
+    padding: 20px 0;
+    height: 200px;
+    position: relative;
+}
+
+#register{
+    width: 310px;
+    margin: auto;
+    padding: 20px 0;
+    height: 200px;
+    position: relative;
+}
+
+.hideform{
+    display: none;
+}

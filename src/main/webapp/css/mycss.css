@@ -1,0 +1,569 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color: black;
+    cursor: pointer;
+}
+
+/*  <header>   */
+/*  <header>   */
+/*  <header>   */
+
+.my-nav{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 3px rgb(243, 243, 243) solid;
+    background: white;
+}
+
+.my-navbar{
+    height: 80px;
+    display: flex;
+    line-height: 80px;
+    margin: auto;
+    padding: 0;
+    width: 97%;
+    justify-content: center;
+}
+
+.my-navbar>img{
+    width: 10%;
+    max-width: 104.5px;
+    min-width: 81px;
+}
+
+.my-navbar>ul{
+    color: rgb(225, 37, 27);
+    display: flex;
+    font-size: 14px;
+    margin: 0 6%;
+}
+
+.my-navbar>ul>li{
+    padding: 0 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+}
+
+.my-navbar>ul>li:hover dl{
+    visibility: visible;
+    top: 80px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.my-navbar a:nth-of-type(1){
+    color: rgb(225, 37, 27);
+}
+
+.my-navbar a:nth-of-type(2){
+    color: rgb(165, 167, 168);
+}
+
+.my-navbar a:nth-of-type(2):hover{
+    color: rgb(225, 37, 27);
+}
+
+.my-navbar>div{
+    display: flex;
+}
+
+.my-navbar>div>div{
+    margin: 0 15px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.my-navbar>div>div:nth-of-type(2) {
+    color: rgb(165, 167, 168);
+    position: relative;
+}
+
+.my-navbar>div>div:nth-of-type(2)::before{
+    content: "";
+    background: url("../img/more.png") center center no-repeat;
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    right: -15px;
+}
+
+.my-navbar dl{
+    border-top: 2px solid rgb(228, 59, 50);
+    background: white;
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.my-navbar dl::after{
+    content: "";
+    background: white;
+    height: 2px;
+    width: 16px;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+}
+
+.my-navbar dl::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    z-index: 1;
+    width: 5px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-right: 2px solid rgb(228, 59, 50);
+    border-bottom: 2px solid rgb(228, 59, 50);
+}
+
+.my-navbar dd{
+    padding: 10px 15px;
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.my-navbar dd:hover{
+    color: rgb(228, 59, 50);
+}
+
+.my-navbar dd::after{
+    content: "";
+    position: absolute;
+    width: 77%;
+    height: 1px;
+    background: rgb(242, 242, 242);
+    left: 10px;
+    top: 0;
+}
+
+/*  </header>   */
+/*  </header>   */
+/*  </header>   */
+
+/*  <section>   */
+/*  <section>   */
+/*  <section>   */
+
+section::before{
+    content: "";
+    display: block;
+    height: 80px;
+}
+
+.banner{
+    background: url(../img/PC_1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.ibrand{
+    background: rgb(247, 247, 247);
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    height: 530px;
+    margin: 120px auto 0 auto;
+}
+
+.ibrand-left{
+    position: relative;
+    width: 50%;
+}
+
+.ibrand-left .gray-font{
+    position: absolute;
+    font-size: 63px;
+    z-index: 2;
+    color: #eee;
+    opacity: 0.6;
+    font-weight: 600;
+    left: -137px;
+}
+
+.ibrand-left .gray-font p{
+    margin: 0;
+    line-height: 75px;
+    height: 63px;
+}
+
+.ibrand-left .red-font{
+    position: absolute;
+    top: 41px;
+    z-index: 2;
+    left: -137px;
+}
+
+.ibrand-left .red-font p{
+    color: rgb(225, 37, 27);
+    font-size: 13px;
+}
+
+.ibrand-left .red-font P:nth-of-type(1) {
+    font-size: 20px;
+}
+
+.ibrand-left .ibrand-img{
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 385px;
+    z-index: 1;
+    bottom: 0;
+}
+
+.ibrand-left .ibrand-img img{
+    width: 100%;
+}
+
+.ibrand-left .red-bg{
+    position: absolute;
+    z-index: 3;
+    width: 215px;
+    padding: 0 15px;
+    height: 268px;
+    background: rgb(225, 37, 27);
+    color: white;
+    bottom: 34px;
+    left: -105px;
+    font-size: 13px;
+}
+
+.ibrand-left .red-bg span{
+    width: 20px;
+    display: block;
+    height: 2px;
+    background: white;
+    margin-top: 83px;
+}
+
+.ibrand-left .red-bg p{
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.ibrand-left .red-bg a{
+    font-size: 10px;
+    color: white;
+    position: relative;
+}
+
+.ibrand-left .red-bg a:hover{
+    text-decoration: underline;
+}
+
+.ibrand-left .red-bg a::after{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 5px;
+    content: "";
+    bottom: 4px;
+    right: -9px;
+    height: 5px;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.ibrand-right{
+    position: relative;
+    width: 50%;
+}
+
+.ibrand-right .gray-font{
+    position: absolute;
+    font-size: 63px;
+    z-index: 2;
+    color: #eee;
+    opacity: 0.6;
+    font-weight: 600;
+    right: -125px;
+}
+
+.ibrand-right .gray-font p{
+    margin: 0;
+    text-align: right;
+    line-height: 75px;
+    height: 63px;
+}
+
+.ibrand-right .red-font{
+    position: absolute;
+    top: 41px;
+    z-index: 2;
+    right: -125px;
+}
+
+.ibrand-right .red-font p{
+    color: rgb(225, 37, 27);
+    font-size: 13px;
+    text-align: right;
+}
+
+.ibrand-right .red-font P:nth-of-type(1) {
+    font-size: 20px;
+}
+
+.ibrand-right .ibrand-img{
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 385px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.ibrand-right .ibrand-img img{
+    width: 100%;
+}
+
+.ibrand-right .red-bg{
+    position: absolute;
+    z-index: 3;
+    width: 215px;
+    padding: 0 15px;
+    height: 268px;
+    background: rgb(225, 37, 27);
+    color: white;
+    bottom: 34px;
+    right: -115px;
+    font-size: 13px;
+}
+
+.ibrand-right .red-bg span{
+    display: block;
+    text-align: right;
+    margin-top: 83px;
+}
+
+.ibrand-right .red-bg p{
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    text-align: right;
+}
+
+.ibrand-right .red-bg a{
+    font-size: 10px;
+    color: white;
+    position: relative;
+    text-align: right;
+    margin-left: 148px;
+}
+
+.ibrand-right .red-bg a:hover{
+    text-decoration: underline;
+}
+
+.ibrand-right .red-bg a::after{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 5px;
+    content: "";
+    bottom: 4px;
+    right: -9px;
+    height: 5px;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.full-page{
+    color: rgb(225, 37, 27);
+    margin: 120px auto 0 auto;
+    width: 82%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.full-page>h2{
+    font: 900 2.39583vw "Lato";
+}
+
+.full-page>p{
+    font-size: 16px;
+}
+
+.full-page ul{
+    width: 300%;
+    transition: 0.5s;
+    position: relative;
+}
+
+.full-page li{
+    float: left;
+    width: 8.33%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.full-page img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.full-page>div{
+    margin: 60px 0;
+    position: relative;
+}
+
+.full-page>div::before{
+    content: "";
+    width: 1px;
+    height: 25px;
+    border-left: 1px red solid;
+    position: absolute;
+    left: 50%;
+    top: -43px;
+}
+
+.full-page>div::after{
+    content: "";
+    width: 1px;
+    height: 25px;
+    border-left: 1px red solid;
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+}
+
+.full-page li:hover img{
+    transform: scale(1.1);
+}
+
+.full-page li:hover >div{
+    bottom: 0;
+}
+
+.full-page li>div>div{
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    background: url(../img/active_bg.png) no-repeat right;
+    mix-blend-mode: multiply;
+    bottom: 0;
+    line-height: 80px;
+    background-size: auto 80px;
+}
+
+.full-page li>div{
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    transition: 0.5s;
+    bottom: -80px;
+}
+
+.full-page li p{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-area{
+    position: relative;
+}
+
+.btn-left{
+    border-left: red 1px solid;
+    border-bottom: 1px red solid;
+    transform: rotate(45deg);
+    display: block;
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    left: 43%;
+}
+
+.btn-right{
+    border-right: red 1px solid;
+    border-top: 1px red solid;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    left: 55%;
+}
+
+.list-area{
+    margin: 60px auto 200px auto;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-area>div{
+    background: rgb(242, 242, 242);
+    color: rgb(128, 128, 128);
+    width: 24%;
+    padding: 0 2.5% 70px 2.5%;
+    transition: 0.5s;
+    min-width: 230px;
+    min-height: 340px;
+}
+
+.list-area>div:hover{
+    color: white;
+    background: red;
+}
+
+.list-title{
+    margin: 30px 0;
+}
+
+.list-title p{
+    margin-bottom: .2em;
+    font: 900 1.66667vw "Lato";
+    text-transform: uppercase;
+}
+
+.list-title span{
+    font-size: 12px;
+}
+
+.list-content dt{
+    font-size: 14px;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.list-content dd{
+    font-size: 11px;
+    line-height: 2;
+
+}
+
+footer{
+    background: rgb(0, 41, 87);
+    height: 75px;
+    text-align: center;
+    display: block;
+}
+
+.zhanwei{
+    visibility: hidden;
+    font-size: 35px;
+}
